@@ -12,12 +12,12 @@ import java.util.Scanner;
  * @author reroes
  */
 public class Problema7 {
-    
-     public static void main(String[] args) {
-        
+
+    public static void main(String[] args) {
+
         String[] ciudades = ingresarCiudades();
-     
-        imprimirCiudades4o5(ciudades);
+
+        imprimirCiudades(ciudades);
     }
 
     public static String[] ingresarCiudades() {
@@ -37,11 +37,9 @@ public class Problema7 {
         return ciudades;
     }
 
-   
-    public static void imprimirCiudades4o5(String[] ciudades) {
+    public static void imprimirCiudades(String[] ciudades) {
         System.out.println("\nCiudades con 4 o 5 caracteres");
 
-       
         for (int i = 0; i < ciudades.length; i++) {
             String ciudad = ciudades[i];
             if (ciudad.length() == 4 || ciudad.length() == 5) {
@@ -50,5 +48,4 @@ public class Problema7 {
         }
     }
 
-   
 }
